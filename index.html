@@ -1,0 +1,328 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday My Love ❤️</title>
+
+<style>
+*{box-sizing:border-box}
+body{
+ margin:0;
+ padding:20px 12px;
+ min-height:100vh;
+ background:linear-gradient(135deg,#ffd6e7,#fff0f5,#ffc1d6);
+ font-family:Georgia,serif;
+ color:#80334e;
+ text-align:center;
+}
+.container{max-width:650px;margin:auto}
+h1{color:#d6336c;font-family:cursive;font-size:32px}
+.subtitle{color:#a83261}
+
+.envelope{
+ position:relative;
+ width:300px;
+ height:190px;
+ max-width:90%;
+ margin:75px auto 35px;
+ background:#ff8fab;
+ border-radius:8px;
+ cursor:pointer;
+ box-shadow:0 10px 30px #0002;
+}
+.flap{
+ position:absolute;
+ inset:0;
+ background:#ffc0d1;
+ clip-path:polygon(0 0,100% 0,50% 65%);
+ transform-origin:top;
+ transition:transform .8s;
+ z-index:5;
+}
+.envelope.open .flap{
+ transform:rotateX(180deg);
+}
+.front{
+ position:absolute;
+ inset:0;
+ background:#ff9db8;
+ clip-path:polygon(0 100%,50% 45%,100% 100%);
+ z-index:3;
+}
+.seal{
+ position:absolute;
+ top:70px;
+ left:50%;
+ transform:translateX(-50%);
+ font-size:45px;
+ z-index:6;
+}
+.envelope.open .seal{display:none}
+
+.hint{color:#c2185b;font-weight:bold}
+
+.letter{
+ display:none;
+ background:#fffaf5;
+ border:2px solid #f4b4c7;
+ border-radius:18px;
+ padding:22px;
+ margin:25px auto;
+ text-align:left;
+ line-height:1.8;
+ box-shadow:0 8px 25px #0002;
+ animation:appear .8s;
+}
+.letter.show{display:block}
+
+@keyframes appear{
+ from{opacity:0;transform:translateY(30px)}
+ to{opacity:1;transform:translateY(0)}
+}
+
+.letter h2{
+ color:#d6336c;
+ text-align:center;
+ font-family:cursive;
+}
+.letter h3{color:#c2185b}
+
+.photos{
+ display:grid;
+ grid-template-columns:1fr 1fr;
+ gap:10px;
+ margin:20px 0;
+}
+.photos img{
+ width:100%;
+ height:190px;
+ object-fit:cover;
+ border:5px solid white;
+ border-radius:12px;
+ box-shadow:0 3px 10px #0002;
+}
+.photos img:first-child{
+ grid-column:span 2;
+ height:280px;
+}
+
+.message{
+ background:#ffe4ed;
+ padding:15px;
+ border-radius:12px;
+ margin:15px 0;
+}
+.signature{
+ text-align:right;
+ color:#d6336c;
+ font-family:cursive;
+ font-size:22px;
+}
+button{
+ background:#d6336c;
+ color:white;
+ border:none;
+ border-radius:25px;
+ padding:12px 25px;
+ font-size:16px;
+ cursor:pointer;
+ margin:15px 0;
+}
+.heart{
+ position:fixed;
+ bottom:-30px;
+ pointer-events:none;
+ animation:float 5s linear forwards;
+}
+@keyframes float{
+ to{transform:translateY(-110vh) rotate(360deg);opacity:0}
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Happy Birthday, My Love! 🎂❤️</h1>
+<p class="subtitle">A special surprise made just for you 💗</p>
+
+<div class="envelope" id="envelope" onclick="openLetter()">
+ <div class="flap"></div>
+ <div class="front"></div>
+ <div class="seal">❤️</div>
+</div>
+
+<p class="hint" id="hint">
+💌 TAP THE ENVELOPE TO OPEN 💌
+</p>
+
+<div class="letter" id="letter">
+
+<h2>To My Beautiful Birthday Girl ❤️</h2>
+
+<p>My dearest love,</p>
+
+<p>
+Happy birthday to the most special person in my life!
+Today is your day, and I want to remind you how much
+you mean to me. I may not always have the perfect words,
+but I hope you feel how deeply I love and appreciate you.
+</p>
+
+<h3>📸 Our Beautiful Memories</h3>
+
+<div class="photos">
+ <img src="1898.jpg" alt="Our special picture">
+ <img src="1730.jpg" alt="Our sweet memory">
+ <img src="1896.jpg" alt="My beautiful birthday girl">
+</div>
+
+<h3>🥺 My Emotional Message</h3>
+
+<div class="message">
+I know we are not perfect. We have misunderstandings,
+arguments, and difficult days. Sometimes we don't
+understand each other, but I never want you to forget
+that you are important to me.
+
+I want to be there when you're happy, when you're sad,
+when you're tired, and when life becomes difficult.
+
+I don't promise that everything will always be perfect.
+But I promise to keep learning, understanding,
+supporting, and loving you.
+
+Thank you for coming into my life.
+You are one of my favorite blessings. ❤️
+</div>
+
+<h3>😂 My Funny Love Confession</h3>
+
+<div class="message">
+Happy birthday to my favorite headache! 🤣
+
+I love you even when you're stubborn, when you steal
+my food, when you get angry, and when you make me
+overthink for no reason!
+
+Sometimes you're my stress, sometimes you're my
+happiness, but you're ALWAYS my favorite person.
+
+Sorry, no returns and no refunds.
+You're stuck with me! 😂❤️
+</div>
+
+<h3>💗 My Birthday Wish For You</h3>
+
+<div class="message">
+I wish you good health, more happiness, success,
+strength, and countless blessings.
+
+May all your dreams come true.
+I hope you never stop smiling and believing in yourself.
+
+You deserve beautiful things, not only today
+but every day of your life.
+</div>
+
+<h3>💍 My Promise</h3>
+
+<p>
+I promise to keep making memories with you.
+I promise to listen, care, respect, and appreciate you.
+I want to celebrate more birthdays with you,
+share more laughter, and experience more adventures.
+</p>
+
+<p>
+If I could choose again, I would still choose you.
+Not because we are perfect, but because you are
+the person I want beside me.
+</p>
+
+<h2>HAPPY BIRTHDAY, MY LOVE! 🎂❤️</h2>
+
+<p style="text-align:center">
+I LOVE YOU SO MUCH! 🥺💗
+</p>
+
+<div class="signature">
+Forever yours,<br>
+Your Loving Partner ❤️
+</div>
+
+<p style="text-align:center">
+Today, Tomorrow, and Always. ♾️
+</p>
+
+<center>
+<button onclick="closeLetter()">Close Letter 💌</button>
+</center>
+
+</div>
+</div>
+
+<script>
+
+let opened=false;
+
+function openLetter(){
+ if(opened)return;
+ opened=true;
+
+ document.getElementById("envelope")
+ .classList.add("open");
+
+ document.getElementById("hint")
+ .innerHTML="Your special surprise is here! ❤️";
+
+ setTimeout(()=>{
+  document.getElementById("letter")
+  .classList.add("show");
+
+  document.getElementById("letter")
+  .scrollIntoView({
+   behavior:"smooth",
+   block:"start"
+  });
+ },700);
+}
+
+function closeLetter(){
+ document.getElementById("letter")
+ .classList.remove("show");
+
+ document.getElementById("envelope")
+ .classList.remove("open");
+
+ document.getElementById("hint")
+ .innerHTML="💌 TAP THE ENVELOPE TO OPEN 💌";
+
+ opened=false;
+ window.scrollTo({top:0,behavior:"smooth"});
+}
+
+function createHeart(){
+ let heart=document.createElement("div");
+ heart.className="heart";
+ heart.innerHTML=["❤️","💕","💗","💖","💘"][
+ Math.floor(Math.random()*5)];
+
+ heart.style.left=Math.random()*100+"vw";
+ heart.style.fontSize=(15+Math.random()*20)+"px";
+ heart.style.animationDuration=(3+Math.random()*4)+"s";
+
+ document.body.appendChild(heart);
+
+ setTimeout(()=>heart.remove(),7000);
+}
+
+setInterval(createHeart,500);
+
+</script>
+
+</body>
+</html>
